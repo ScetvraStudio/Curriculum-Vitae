@@ -1,0 +1,256 @@
+:root {
+    --primary-color: #0a192f;
+    --secondary-color: #495670;
+    --accent-color: #64ffda;
+    --text-color: #ccd6f6;
+    --text-secondary: #8892b0;
+    --bg-color: #0a192f;
+    --card-bg: #112240;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+
+/* Navbar */
+
+.navbar {
+    background-color: rgba(10, 25, 47, 0.9) !important;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    color: var(--accent-color) !important;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+    margin: 0 10px;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent-color) !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+
+/* Profile & Layout */
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.main-content {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.section-title {
+    color: var(--accent-color);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: var(--accent-color);
+    margin-top: 10px;
+}
+
+
+/* Contact Info */
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info i {
+    color: var(--accent-color);
+    margin-right: 10px;
+    width: 20px;
+}
+
+
+/* Language Skills */
+
+.language-skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.language-dots {
+    display: flex;
+    margin-left: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    margin-right: 5px;
+    opacity: 0.3;
+}
+
+.dot.filled {
+    opacity: 1;
+}
+
+
+/* Progress Bars */
+
+.progress {
+    height: 8px;
+    background-color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    background-color: var(--accent-color);
+}
+
+
+/* Experience */
+
+.experience-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+.experience-date {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
+
+.experience-company {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.experience-position {
+    font-weight: 500;
+    color: var(--accent-color);
+}
+
+
+/* Buttons & Icons */
+
+.btn-outline-accent {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn-outline-accent:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+}
+
+.social-icons a {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--accent-color);
+}
+
+.home-content {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.greeting {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+.description {
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.game-dev-icon {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .name {
+        font-size: 2.5rem;
+    }
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+    .sidebar {
+        margin-bottom: 30px;
+    }
+}
