@@ -4,21 +4,27 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fawwaz Anggita Yumna Qotrunnada - Pelajar & Calon Game Developer</title>
+    <title>Curicullum Vitae Fawwaz AYQ</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="Logo.png" type="image/x-icon" />
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Fawwaz AYQ</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="navbar-brand" href="#home">Fawwaz AYQ</a>
+            <div class="d-flex align-items-center">
+                <div class="dark-mode-toggle me-3" id="darkModeToggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -46,9 +52,9 @@
         <div class="row">
             <!-- Sidebar -->
             <div class="col-lg-4 mb-4">
-                <div class="sidebar sticky-top" style="top: 20px;">
+                <div class="sidebar">
                     <div class="text-center">
-                        <img src="Profile.jpg" alt="Profile Photo" class="profile-img">
+                        <img src="Profile.jpg" alt="Profile Photo" class="profile-img" id="profileImage">
                         <h3>Fawwaz Anggita Yumna Qotrunnada</h3>
                         <p class="text-muted">Pelajar & Calon Game Developer</p>
                     </div>
@@ -95,11 +101,37 @@
                             </div>
                         </div>
                         <div class="language-skill">
+                            <span>Japan</span>
+                            <div class="language-dots">
+                                <span class="dot filled"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="language-skill">
                             <span>Croatia</span>
                             <div class="language-dots">
                                 <span class="dot filled"></span>
                                 <span class="dot"></span>
                                 <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <h5 class="section-title">Portfolio Images</h5>
+                        <div class="gallery-container">
+                            <div class="gallery-item">
+                                <img src="https://placehold.co/200x200/64ffda/0a192f?text=Project+1" alt="Project 1" data-full="https://placehold.co/600x400/64ffda/0a192f?text=Project+1">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://placehold.co/200x200/64ffda/0a192f?text=Project+2" alt="Project 2" data-full="https://placehold.co/600x400/64ffda/0a192f?text=Project+2">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://placehold.co/200x200/64ffda/0a192f?text=Project+3" alt="Project 3" data-full="https://placehold.co/600x400/64ffda/0a192f?text=Project+3">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://placehold.co/200x200/64ffda/0a192f?text=Project+4" alt="Project 4" data-full="https://placehold.co/600x400/64ffda/0a192f?text=Project+4">
                             </div>
                         </div>
                     </div>
@@ -122,9 +154,10 @@
                     <p class="description">
                         Saya seorang siswa SMK jurusan Pengembangan Perangkat Lunak dan Gim yang bersemangat dalam dunia pengembangan game. Saat ini sedang mempelajari berbagai aspek pembuatan game sambil mengerjakan proyek-proyek kecil untuk mengasah kemampuan.
                     </p>
-                    <div class="d-flex gap-3">
+                    <div class="d-flex gap-3 flex-wrap">
                         <a href="#contact" class="btn btn-outline-accent px-4 py-2">Hubungi Saya</a>
                         <a href="#experience" class="btn btn-outline-accent px-4 py-2">Lihat Proyek</a>
+                        <a href="#" class="btn btn-outline-accent px-4 py-2" id="downloadCV">Download CV</a>
                     </div>
                 </section>
 
@@ -132,7 +165,7 @@
                 <section id="profile" class="main-content mt-4">
                     <h3 class="section-title">Profil</h3>
                     <p>
-                        Saat ini saya adalah siswa kelas XII di SMK Negeri 1 Bawang Banjarnegara, jurusan Pengembangan Perangkat Lunak dan Gim. Saya sedang mempelajari berbagai aspek pengembangan game termasuk pemrograman, desain game, dan aset digital sebagai persiapan untuk
+                        Saat ini saya adalah siswa kelas XI di SMK Negeri 1 Bawang Banjarnegara, jurusan Pengembangan Perangkat Lunak dan Gim. Saya sedang mempelajari berbagai aspek pengembangan game termasuk pemrograman, desain game, dan aset digital sebagai persiapan untuk
                         karir di industri game.
                     </p>
                     <p>
@@ -179,7 +212,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="d-flex justify-content-between">
-                                <span>Game Design</span>
+                                <span>Content Creator</span>
                                 <span>60%</span>
                             </div>
                             <div class="progress">
@@ -224,8 +257,8 @@
                         <h6 class="experience-company">Proyek Sekolah</h6>
                         <p class="experience-date">Agust 2024 - Des 2024</p>
                         <ul>
-                            <li>Membuat website unofficial untuk tim esports FNATIC sebagai tugas akhir semester</li>
-                            <li>Mengembangkan halaman portfolio untuk Scetvra Studio menggunakan Bootstrap</li>
+                            <li>Membuat website unofficial untuk tim esports FNATIC sebagai latihan dasar</li>
+                            <li>Mengembangkan website untuk Scetvra Studio agar lebih proper</li>
                             <li>Menerapkan responsive design dan basic user experience principles</li>
                             <li>Belajar integrasi frontend dengan backend sederhana</li>
                         </ul>
@@ -248,7 +281,7 @@
                         </ul>
                         <div class="mt-2">
                             <span class="badge bg-secondary me-1">Video Editing</span>
-                            <span class="badge bg-secondary me-1">Graphic Design</span>
+                            <span class="badge bg-secondary me-1">Content Creator</span>
                             <span class="badge bg-secondary me-1">Content Strategy</span>
                         </div>
                     </div>
@@ -277,13 +310,13 @@
                         <div class="col-md-6">
                             <form id="contactForm">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control bg-dark text-light" placeholder="Nama Anda" required>
+                                    <input type="text" class="form-control" placeholder="Nama Anda" required>
                                 </div>
                                 <div class="mb-3">
-                                    <input type="email" class="form-control bg-dark text-light" placeholder="Email Anda" required>
+                                    <input type="email" class="form-control" placeholder="Email Anda" required>
                                 </div>
                                 <div class="mb-3">
-                                    <textarea class="form-control bg-dark text-light" rows="3" placeholder="Pesan Anda" required></textarea>
+                                    <textarea class="form-control" rows="3" placeholder="Pesan Anda" required></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-outline-accent">Kirim Pesan</button>
                             </form>
@@ -292,6 +325,23 @@
                 </section>
             </div>
         </div>
+    </div>
+
+    <!-- Fullscreen Image Modal -->
+    <div class="modal-overlay" id="imageModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <img src="" alt="" id="modalImage">
+            <div class="modal-nav">
+                <button id="prevImage">&lt;</button>
+                <button id="nextImage">&gt;</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to top button -->
+    <div class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
     </div>
 
     <!-- Footer -->
